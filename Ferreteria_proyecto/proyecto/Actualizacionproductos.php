@@ -2,7 +2,7 @@
 // Iniciar la sesión para poder usar las variables de sesión
 session_start();
 
-include 'session_check.php'; // Incluir un archivo que verifica si el usuario está activo o la sesión sigue válida
+use 'session_check.php'; // Incluir un archivo que verifica si el usuario está activo o la sesión sigue válida
 
 // Verificar si el usuario ha iniciado sesión, si no, redirigirlo a la página de inicio de sesión
 if (!isset($_SESSION['user_id'])) {
